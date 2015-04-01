@@ -23,7 +23,8 @@ function imageAnimator() {
 
 	function scanAnimates() {
 		var top = $(document).scrollTop();
-		var target = $('.animate-image-wrapper').offset().top;
+		var wrapper = $('.animate-image-wrapper');
+		var target = wrapper.offset().top + (wrapper.height() / 2);
 		var bottom = $(document).scrollTop() + $(window).height();
 		if (target > top && target < bottom)
 		{
