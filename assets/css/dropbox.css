@@ -288,7 +288,16 @@ span.button-help-text {
 	border-bottom: 1px solid #8899A7;	
 }
 #why-dropbox .animate-image {
-	width: 200px;
+	height: 100%;
+	display: none;
+	-webkit-animation: scaleUpBounce .5s linear 0s alternate;
+	-moz-animation: scaleUpBounce .5s linear 0s alternate;
+	-ms-animation: scaleUpBounce .5s linear 0s alternate;
+	-o-animation: scaleUpBounce .5s linear 0s alternate;
+	animation: scaleUpBounce .5s linear 0s alternate; 	
+}
+#why-dropbox .animate-image-wrapper {
+	position: relative;
 	height: 182px;
 }
 #what-dropbox {
@@ -527,4 +536,104 @@ span.button-help-text {
 }
 .row .col-12 {
 	width: 1020px;
+}
+
+
+/*
+ * Keyframes 
+ */
+@-moz-keyframes scaleUpBounce {
+	0%   {
+		opacity: 0; 
+		height: 50%;
+		-moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    -webkit-filter: blur(15px);
+	    filter: blur(15px);
+	}
+    90%  {
+    	opacity: 1; 
+    	-webkit-filter: blur(0);
+    	filter: blur(0);
+    	height: 100%;
+    }
+    95%  {
+    	height: 110%;
+    }
+    100% {
+	    -moz-transform: translateX(0%);
+    	-ms-transform: translateX(0%);
+    	-webkit-transform: translateX(0%);
+    	transform: translateX(0%);
+    	height: 100%;
+    }
+}
+@-webkit-keyframes scaleUpBounce {
+	0%   {
+		opacity: 0; 
+		height: 50%;
+		-moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    -webkit-filter: blur(15px);
+	    filter: blur(15px);
+	}
+    90%  {
+    	opacity: 1; 
+    	-webkit-filter: blur(0);
+    	filter: blur(0);
+    	height: 100%;
+    }
+    95%  {
+    	height: 110%;
+    }
+    100% {
+	    -moz-transform: translateX(0%);
+    	-ms-transform: translateX(0%);
+    	-webkit-transform: translateX(0%);
+    	transform: translateX(0%);
+    	height: 100%;
+    }
+}
+@keyframes scaleUpBounce {
+	0%   {
+		opacity: 0; 
+		height: 50%;
+		-moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    -webkit-filter: blur(15px);
+	    filter: blur(15px);
+	}
+    90%  {
+    	opacity: 1; 
+    	-webkit-filter: blur(0);
+    	filter: blur(0);
+    	height: 100%;
+    }
+    95%  {
+    	height: 110%;
+    }
+    100% {
+	    -moz-transform: translateX(0%);
+    	-ms-transform: translateX(0%);
+    	-webkit-transform: translateX(0%);
+    	transform: translateX(0%);
+    	height: 100%;
+    }
+}
+
+@keyframes fadeInUpward {
+	0% {
+		opacity: 0;
+		background-position-y: 500px;
+	}
+	100% {
+		opacity: 1;
+		background-position-y: -86px;
+	}
 }

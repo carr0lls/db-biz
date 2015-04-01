@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
-	$('#header .header-bg-image').animate({opacity: '1', backgroundPositionY: -98}, 3000);
+	// Show header bg image after a half second delay
+	setTimeout(function() {
+		$('#header .header-bg-image').animate({opacity: '1', backgroundPositionY: -86}, 3000);
+	}, 500);
     
     // Dropbox demo video player effects
 	$('#dropbox-demo-video .play-btn').on('click', function() {
@@ -15,4 +18,6 @@ $(document).ready(function() {
 		$('#dropbox-demo-video .video-title').fadeIn();
 	});
 
+	// Image animations for Why Dropbox section
+	imageAnimator();
 });
