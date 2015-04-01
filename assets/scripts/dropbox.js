@@ -1,9 +1,4 @@
 $(document).ready(function() {
-
-	// Show header bg image after a half second delay
-	setTimeout(function() {
-		$('#header .header-bg-image').animate({opacity: '1', backgroundPositionY: -86}, 3000);
-	}, 500);
     
     // Dropbox demo video player effects
 	$('#dropbox-demo-video .play-btn').on('click', function() {
