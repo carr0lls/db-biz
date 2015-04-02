@@ -42,7 +42,7 @@ function imageAnimator() {
 			// Show animates with overlapping timeline effect
 			var timer = 0;
 			$('.animate-image').each(function() {
-				$(this).delay(timer).show(0);
+				$(this).delay(timer).addClass('active');
 				timer += 250;
 			});
 			window.removeEventListener('scroll', checkScroll);
