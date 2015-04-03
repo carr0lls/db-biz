@@ -470,7 +470,7 @@ span.button-help-text {
 	text-decoration: underline;
 }
 .region-selector {
-	float: right;
+	margin: 0 30px 35px 0;
 }
 .region-selector:after {
 	border: 0.5em solid transparent;
@@ -529,7 +529,12 @@ span.button-help-text {
 	#footer {
 		margin: 0 auto;
 		max-width: 85%;
-	}	
+	}
+	#footer .col-2 {
+		margin: 0 7% 7% 0;
+		display: inline-block;
+		vertical-align: text-top;
+	}
 }
 @media(max-width: 800px)
 {
@@ -543,6 +548,14 @@ span.button-help-text {
 	#what-dropbox h2,
 	#what-dropbox p {
 		padding: 0 10%;
+	}
+	#footer {
+		font-size: 16px;
+	}
+	#footer .col-2 {
+		margin: 0 0 5% 0;
+		display: block;
+		text-align: center;
 	}	
 }
 @media(max-width: 550px)
@@ -561,6 +574,10 @@ span.button-help-text {
 	#header .dropbox-icon {
 		width: 37px;
 		height: 34px;
+	}
+
+	.region-selector {
+		float: right;
 	}
 
 	/* 12 (55px) column grid with (30px) gutters */
