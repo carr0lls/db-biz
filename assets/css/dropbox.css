@@ -397,7 +397,7 @@ span.button-help-text {
 /* Background Image */
 #header .header-bg-image {
 	background-image: url(../images/dropbox-for-business-files.png);
-  	background-repeat: repeat-x;
+  	background-repeat: no-repeat;
   	background-position: center 500px;
   	opacity: 0;
   	width: 100%;
@@ -546,6 +546,10 @@ span.button-help-text {
 		height: 22px;
 		margin: 20px;
 	}
+	/* Lower res image on smaller screens */
+	#dropbox-demo-video {
+		background: url(../images/video-still.jpg) no-repeat center;
+	}	
 	.video-title {
 		max-width: 360px;
   		margin: 0 auto;
