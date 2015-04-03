@@ -14,7 +14,7 @@ $(document).ready(function() {
 	});
 
 	// Show/hide mobile nav menu
-	$(".mobile-menu-btn").on('click', function() {
+	$(".mobile-menu-btn").on('click', function(event) {
 		event.preventDefault();
 		$("#mobile-menu").slideToggle();
 	});
