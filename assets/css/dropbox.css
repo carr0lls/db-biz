@@ -489,22 +489,16 @@ span.button-help-text {
 
 /*
  * Media Queries for responsive view
- */ 
+ */
+
+.row {
+	position: relative;
+	margin: 0 auto;	
+}
+
 @media(max-width: 1049px)
 {
-	.row .col-1,
-	.row .col-2,
-	.row .col-3,
-	.row .col-4,
-	.row .col-5,
-	.row .col-6,
-	.row .col-7,
-	.row .col-8,
-	.row .col-9,
-	.row .col-10,
-	.row .col-11,
-	.row .col-12 {
-		margin: 0 auto;
+	.row {
 		max-width: 85%;
 	}
 	#icon-row {
@@ -539,33 +533,22 @@ span.button-help-text {
 }
 @media(max-width: 800px)
 {
-	.row .col-1,
-	.row .col-2,
-	.row .col-3,
-	.row .col-4,
-	.row .col-5,
-	.row .col-6,
-	.row .col-7,
-	.row .col-8,
-	.row .col-9,
-	.row .col-10,
-	.row .col-11,
-	.row .col-12 {
+	.row {
 		max-width: 100%;
 	}
 	#header .row,
 	#why-dropbox {
 		padding: 0 10%;
 	}
+	#what-dropbox h2,
+	#what-dropbox p {
+		padding: 0 10%;
+	}	
 }
 @media(max-width: 550px)
 {
 	#header h1 {
 		font-size: 32px;
-	}
-	#what-dropbox h2 {
-		margin-left: 5%;
-		margin-right: 5%;
 	}
 	.carousel .dot {
 		width: 20px;
@@ -582,7 +565,6 @@ span.button-help-text {
 
 	/* 12 (55px) column grid with (30px) gutters */
 	.row {
-		margin: 0 auto;
 		max-width: 1050px;
 	}
 	.row:before, 
@@ -615,7 +597,7 @@ span.button-help-text {
 	.row .col-10,
 	.row .col-11,
 	.row .col-12 {
-		position: relative;
+		/*position: relative;*/
 		min-height: 1px;
 		padding-right: 15px;
 		padding-left: 15px;
