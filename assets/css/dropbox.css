@@ -278,6 +278,30 @@ span.button-help-text {
 	font-size: 22px;
 	font-weight: 400;
 }
+#mobile-menu {
+	display: none;
+}
+#mobile-menu li {
+	background: #fff;
+	border-top: 1px solid #007ee5;
+	padding: 14px;
+}
+#mobile-menu li a {
+	color: #007ee5;
+}
+#mobile-menu li:hover {
+	cursor: pointer;
+	background: #f0f7fd;
+}
+.mobile-menu-btn {
+	position: absolute;
+	z-index: 1;
+	margin: 14px;
+	background: #007ee5;
+	color: #fff;
+	min-width: 55px;
+	border: 1px solid #fff;
+}
 #header {
 	height: 500px;
 	background: #007ee5;
@@ -571,6 +595,10 @@ span.button-help-text {
 }
 @media(min-width: 1050px)
 {
+	.mobile-menu-btn {
+		display: none;
+	}
+
 	#header .dropbox-icon {
 		width: 37px;
 		height: 34px;

@@ -13,6 +13,19 @@ $(document).ready(function() {
 		$('#dropbox-demo-video .video-title').fadeIn();
 	});
 
+	// Show/hide mobile nav menu
+	$(".mobile-menu-btn").on('click', function() {
+		event.preventDefault();
+		$("#mobile-menu").slideToggle();
+	});
+	// Hide mobile menu if in desktop resolution
+	$(window).on('resize', function(event) {
+		if ($(window).width() > 1049) 
+		{
+			$("#mobile-menu").hide();
+		}
+	});
+
 	// Image animations for Why Dropbox section
 	imageAnimator();
 	// Create new carousel by passing in carousel element
