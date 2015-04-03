@@ -11,7 +11,8 @@
 	box-sizing:border-box;
 }
 * {
-	/*-webkit-font-smoothing: antialiased;*/
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 html,
 body {
@@ -317,11 +318,23 @@ span.button-help-text {
 	width: 540px;
 	height: 300px;
 	vertical-align: middle;
+	display: none;
 }
-.carousel .arrow {
+.carousel .left-arrow {
 	width: 16px;
 	height: 30px;
 	display: inline-block;
+	background: url(../images/arrow-left@2x.png);
+	background-size: 100%;
+	cursor: pointer;
+}
+.carousel .right-arrow {
+	width: 16px;
+	height: 30px;
+	display: inline-block;
+	background: url(../images/arrow-right@2x.png);
+	background-size: 100%;
+	cursor: pointer;
 }
 .carousel .dot {
 	width: 16px;
@@ -330,8 +343,10 @@ span.button-help-text {
 	background: #007ee5;
 	display: inline-block;
 	margin: 15px;
+	cursor: pointer;
 }
 .carousel .dot.active {
+	cursor: default;
 	background: #8899A7;
 }
 #dropbox-demo-video {

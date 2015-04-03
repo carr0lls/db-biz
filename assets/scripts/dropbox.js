@@ -15,4 +15,6 @@ $(document).ready(function() {
 
 	// Image animations for Why Dropbox section
 	imageAnimator();
+	// Create new carousel by passing in carousel element
+	carousel($('#business-page-carousel'));
 });
