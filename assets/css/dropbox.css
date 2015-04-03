@@ -523,6 +523,15 @@ span.button-help-text {
 	.carousel .right-arrow {
 		display: none;
 	}
+	.carousel .dot {
+		width: 22px;
+		height: 22px;
+		margin: 20px;
+	}
+	.video-title {
+		max-width: 360px;
+  		margin: 0 auto;
+	}
 }
 @media(max-width: 800px)
 {
@@ -554,6 +563,11 @@ span.button-help-text {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	.carousel .dot {
+		width: 20px;
+		height: 20px;
+		margin: 18px;
+	}	
 }
 @media(min-width: 1050px)
 {
