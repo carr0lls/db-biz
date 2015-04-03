@@ -296,7 +296,7 @@ span.button-help-text {
 }
 #why-dropbox .animate-image.active {
 	visibility: visible;
-	-webkit-animation: scaleUpBounce .5s linear 1s alternate;
+	-webkit-animation: scaleUpBounce .5s linear 0s alternate;
 	-moz-animation: scaleUpBounce .5s linear 0s alternate;
 	-ms-animation: scaleUpBounce .5s linear 0s alternate;
 	-o-animation: scaleUpBounce .5s linear 0s alternate;
