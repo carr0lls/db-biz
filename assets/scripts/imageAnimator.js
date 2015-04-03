@@ -5,7 +5,7 @@ function imageAnimator() {
 	// Check initial screen for animates and bind event to scroller
 	function initialize() {
 		scanAnimates();
-		window.addEventListener('scroll', checkScroll);
+		$(window).on('scroll', checkScroll);
 	}
 
 	function checkScroll() {
@@ -47,7 +47,7 @@ function imageAnimator() {
 				});
 				timer += 250;
 			});
-			window.removeEventListener('scroll', checkScroll);
+			$(window).off('scroll', checkScroll);
 		}
 	}
 
