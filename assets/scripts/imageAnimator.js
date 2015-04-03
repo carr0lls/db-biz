@@ -23,10 +23,18 @@ function imageAnimator() {
 
 	function scanAnimates() {
 		var top = $(document).scrollTop();
-		var wrapper = $('.animate-image-wrapper');
-		var target = wrapper.offset().top + (wrapper.height() / 2);
-		var bottom = $(document).scrollTop() + $(window).height();
-		if (target > top && target < bottom)
+		var bottom = $(document).scrollTop() + $(window).height();		
+		var wrapper = $('.imageAnimator');
+		var targetTop = wrapper.offset().top;
+		var targetBottom = targetTop + $(wrapper).outerHeight(true);
+
+		if (targetTop > top && targetTop < bottom)
+		{
+			onDisplay = true;
+			topMarker = top;
+			bottomMarker = bottom;
+		}
+		else if (targetBottom > top && targetBottom < bottom)
 		{
 			onDisplay = true;
 			topMarker = top;
