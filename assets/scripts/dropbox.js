@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    // Dropbox demo video player effects
+	// Dropbox demo video player effects
 	$('#dropbox-demo-video .play-btn').on('click', function() {
 		$('#dropbox-demo-video .video-title').fadeOut();
 		$(this).fadeOut();
