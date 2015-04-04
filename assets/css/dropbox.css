@@ -71,7 +71,7 @@ a {
 }
 .btn.btn-lg {
 	line-height: 34px;
-	min-width: 265px;
+	min-width: 150px;
 	height: 50px;
 	font-size: 17px;
 	margin: 25px 10px;
@@ -597,6 +597,13 @@ span.button-help-text {
 		margin: 18px;
 	}	
 }
+@media(max-width: 300px)
+{
+	#header .row,
+	#why-dropbox {
+		padding: 0 3%;
+	}
+}
 @media(min-width: 1050px)
 {
 	.mobile-menu-btn {
@@ -606,6 +613,10 @@ span.button-help-text {
 	#header .dropbox-icon {
 		width: 37px;
 		height: 34px;
+	}
+	
+	.btn.btn-lg {
+		min-width: 265px;
 	}
 
 	.region-selector {
