@@ -581,9 +581,7 @@ span.button-help-text {
 		font-size: 16px;
 	}
 	#footer .col-2 {
-		margin: 0 0 5% 0;
-		display: block;
-		text-align: center;
+		width: 110px;
 	}	
 }
 @media(max-width: 550px)
