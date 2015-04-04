@@ -401,6 +401,7 @@ span.button-help-text {
   	width: 100%;
   	height: 500px;
   	position: absolute;
+  	left: 0;
 	-webkit-animation: fadeInUpward 1.5s linear 1s alternate;
 	-moz-animation: fadeInUpward 1.5s linear 1s alternate;
 	-o-animation: fadeInUpward 1.5s linear 1s alternate;
@@ -409,6 +410,9 @@ span.button-help-text {
   	-moz-animation-fill-mode: forwards;
   	-o-animation: forwards;
   	animation-fill-mode: forwards;
+}
+.ie-fix {
+	position: relative;
 }
 
 .navbar {
