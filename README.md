@@ -2,6 +2,25 @@
 
 [Live demo](http://carrollyu.me/dropbox)
 
+Development stack:
+- HTML5
+- Javascript
+- CSS
+- jQuery
+
+Testing Tools (latest browser versions):
+- W3C Validator
+- Google Chrome
+- Mozilla Firefox
+- Internet Explorer
+- Safari
+- Opera
+- OS X Yosemite
+- Windows 7/8
+- Android (Moto X)
+- iOS (iPhone 4/5s/6)
+- Windows mobile (Nokia Lumia)
+
 Features to be added in the future:
 - Implement column offsets ability in the 12 column grid
 - Use SASS to dynamically change font color and weight according to its size
