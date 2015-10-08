@@ -1,6 +1,6 @@
 # Revamp of the Dropbox for Business page
 
-[Live demo](http://carrollyu.me/dropbox)
+[Live demo](http://carrollyu.com/dropbox)
 
 Development stack:
 - HTML5
